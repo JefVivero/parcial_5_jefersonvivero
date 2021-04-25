@@ -92,7 +92,7 @@ export default function EditTask({navigation, route}) {
                 title="Completar Tarea"
                 containerStyle={styles.btncontainer}
                 buttonStyle={styles.btnDel}
-                onPress={() => Delete}
+                onPress={() => Delete()}
             />
             <Loading  isVisible={loading} text="Por favor espere.."/>
             <Toast ref={toasRef} position="center" opacity={0.9}/>

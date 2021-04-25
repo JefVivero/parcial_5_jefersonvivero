@@ -43,22 +43,20 @@ export default function AddTask({navigation, route}) {
 
     return (
         <View style={styles.viewBody}>
-            <Modal isVisible={isvisibleModal} setVisible={setIsvisibleModal}>
-                <View>
-                    <Input
-                        containerStyle={styles.input}
-                        placeholder="Ingresa la tarea..."
-                        onChange={(e) => setTask(e.nativeEvent.text)}
-                        errorMessage={errorTask}
-                    />
-                    <Button
-                        title="Crear tarea"
-                        containerStyle={styles.btncontainer}
-                        buttonStyle={styles.btn}
-                        onPress={() => Add()}
-                    />
-                </View>
-            </Modal>
+            <View>
+                <Input
+                    containerStyle={styles.input}
+                    placeholder="Ingresa la tarea..."
+                    onChange={(e) => setTask(e.nativeEvent.text)}
+                    errorMessage={errorTask}
+                />
+                <Button
+                    title="Crear tarea"
+                    containerStyle={styles.btncontainer}
+                    buttonStyle={styles.btn}
+                    onPress={() => Add()}
+                />
+            </View>
             <Toast ref={toasRef} position="center" opacity={0.9}/>
         </View>
     )
@@ -67,7 +65,7 @@ export default function AddTask({navigation, route}) {
 const styles = StyleSheet.create({
     viewBody:{
         flex: 1,
-        marginTop: 5,
+        marginTop: 105,
     },
     input:{
         width: "100%"

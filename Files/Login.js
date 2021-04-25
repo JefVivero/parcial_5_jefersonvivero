@@ -89,7 +89,6 @@ export default function Login({navigation}) {
                  />
                  <Loading  isVisible={loading} text="Iniciando Session"/>
             </View>
-            
         </View>
     )
 }
@@ -103,10 +102,9 @@ const styles = StyleSheet.create({
         marginHorizontal:40
     },
     containerform: {
-        flex:1,
         alignItems: "center",
         justifyContent:"center",
-        marginTop: 30
+        marginTop: 70
     },
     btncontainer:{
         marginTop:20,
